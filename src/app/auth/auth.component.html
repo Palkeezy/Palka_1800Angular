@@ -1,0 +1,14 @@
+<div *ngIf="!isTokenPresent">
+  <button (click)="login()">Login</button>
+  <button (click)="registration()">Registration</button>
+  <div *ngIf="showLogin">
+    <app-login-user></app-login-user>
+  </div>
+  <div *ngIf="showRegistration">
+    <app-register-user></app-register-user>
+  </div>
+</div>
+<br>
+<div *ngIf="isTokenPresent">
+  <button (click)="logout()">Logout</button>
+</div>

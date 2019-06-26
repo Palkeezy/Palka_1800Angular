@@ -1,0 +1,14 @@
+<h3>Registration User</h3>
+<form #registerForm="ngForm" (ngSubmit)=registerUser(registerForm.form.value)>
+  <label>Name: </label>
+  <input type="text" name="name" placeholder="name" required ngModel>
+  <label>Surname: </label>
+  <input type="text" name="surname" placeholder="surname" required ngModel>
+  <label>Email: </label>
+  <input type="email" name="email" placeholder="example@email.com" required ngModel>
+  <label>Password: </label>
+  <input type="password" name="password" placeholder="*****" required ngModel>
+  <label>Phone: </label>
+  <input type="text" name="phone" placeholder="+380(**)***-**-**" required ngModel>
+  <input type="submit" value="Ok" routerLink="/">
+</form>
