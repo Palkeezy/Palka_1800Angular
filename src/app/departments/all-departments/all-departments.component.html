@@ -1,0 +1,7 @@
+<h2>Departments</h2>
+<div *ngFor="let department of departments">
+  <div (click)="departmentInfo(department.id)">
+    <hr>
+    <h4>{{department.description | uppercase}}</h4>
+  </div>
+</div>

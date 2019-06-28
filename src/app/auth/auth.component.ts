@@ -15,7 +15,7 @@ export class AuthComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.isTokenPresent = localStorage.getItem('token');
+    this.isTokenPresent = !!localStorage.getItem('token');
   }
 
   login() {

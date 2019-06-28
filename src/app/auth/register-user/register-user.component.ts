@@ -19,5 +19,6 @@ export class RegisterUserComponent implements OnInit {
     console.log(registerForm);
     this.authService.registerUser(registerForm).subscribe(data => {
     });
+    window.location.reload();
   }
 }

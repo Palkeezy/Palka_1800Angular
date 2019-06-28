@@ -11,6 +11,7 @@ import {API_Response} from '../../interfaces/API_Response';
 export class LoginUserComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
+
   ngOnInit() {
   }
 
@@ -21,6 +22,7 @@ export class LoginUserComponent implements OnInit {
       console.log(data.msg);
       if (data.success) {
         localStorage.setItem('token', `${data.msg}`);
+        window.location.reload();
       }
     });
   }
